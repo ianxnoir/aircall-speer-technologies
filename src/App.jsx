@@ -92,7 +92,7 @@ const App = () => {
         const dateB = new Date(n.created_at);
         return dateB - dateA;
       });
-      setCalls(data); // Set the fetched calls to the state
+      setCalls(data);
     } catch (error) {
       console.error('Error fetching initial calls:', error);
     }
@@ -118,7 +118,7 @@ const App = () => {
       );
       setCalls(updatedCalls);
       setSelectedCallIds([]);
-      setIsSelectMode(false); // Exit select mode after archiving
+      setIsSelectMode(false);
     } catch (error) {
       console.error('Error archiving selected calls:', error);
     }
@@ -134,7 +134,7 @@ const App = () => {
       );
       setCalls(updatedCalls);
       setSelectedCallIds([]);
-      setIsSelectMode(false); // Exit select mode after archiving
+      setIsSelectMode(false); 
     } catch (error) {
       console.error('Error archiving selected calls:', error);
     }
@@ -142,7 +142,7 @@ const App = () => {
 
   const cancelSelection = () => {
     setSelectedCallIds([]);
-    setIsSelectMode(false); // Exit select mode
+    setIsSelectMode(false);
   };
 
   const [alignment, setAlignment] = useState('web');
