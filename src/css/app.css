@@ -1,0 +1,195 @@
+#app {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#app .container {
+  width: 376px;
+  height: 666px;
+  z-index: 100;
+
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+}
+
+.tab-link{
+  color:black;
+  height: 100%;
+  width: 100%;
+}
+
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+.activity-container {
+  overflow-y: auto; 
+  height: 489px;
+}
+
+
+.call-item {
+  border-left: none;
+  border-right: none;
+  padding: 0px 0px 0px 6px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.call-item:first-child {
+  border-top: 1px solid #ccc; 
+}
+
+.btn-container{
+  margin-top: 10px;
+  padding:5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.call-content-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.call-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.call-details{
+  display: flex;
+  flex-direction: column;
+  text-transform:capitalize;
+}
+
+.call-icon{
+  padding: 0px 12px 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.call-icon-container{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+}
+
+
+.archive-btn{
+  text-transform:capitalize!important;
+  height: 63px;
+  font-size: 12px !important;
+  font-weight: 400 !important; 
+  padding: 12px !important;
+  border-radius: 0px !important;
+  color:grey;
+  width: 75px;
+}
+
+
+.from-text{
+ font-weight: 600;
+ font-size: 15px;
+ margin-bottom: 5px;
+}
+
+.top-btn{
+  width:140px;
+  font-weight: 400;
+  
+}
+
+.type-text{
+  font-weight: 300;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+
+.time-text{
+  font-weight: 300;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+.duration-text{
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.archive-btn-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.MuiToggleButton-root.Mui-selected {
+  background-color: #1f792f !important;
+  border-color: #000 !important;
+}
+
+.no-activity-container{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin: 205px 0px;
+  height: 89px;
+}
+
+.history-icon{
+  margin-bottom: 20px;
+  transform: scale(2);
+}
+
+.tab-btn{
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.tab-btn-grp{
+  display: flex;
+  flex-direction: row;
+}
+
+.active {
+  background-color: #ccc; 
+}
